@@ -107,8 +107,8 @@ graph TD
     %% Data Flow
     V -->|3. Subscribe (UniRx)| M
     
-    %% Event Flow
-    V -.->|4. Emit User Actions (Event)| C
+    %% Event Flow (event-based communication, not direct dependency)
+    V -->|4. Emit User Actions (Event)| C
 ```
 
 ### Code Example
